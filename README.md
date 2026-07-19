@@ -23,10 +23,10 @@ Select guided partitioning with encrypted LVM.
 
 LVM Write Confirmation
 
-Select the internal NVMe drive as the Debian installation target.
-Confirm the installer is applying partition changes to /dev/nvme0n1.
-Approve writing partition changes to disk.
-Begin Logical Volume Manager configuration.
+- Select the internal NVMe drive as the Debian installation target.
+- Confirm the installer is applying partition changes to `/dev/nvme0n1`.
+- Approve writing partition changes to disk.
+- Begin Logical Volume Manager configuration.
 
 <img src="images/lvm-write.jpg" alt="LVM Write Confirmation" width="700"/>
 
