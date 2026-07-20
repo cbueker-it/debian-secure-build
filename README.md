@@ -40,7 +40,7 @@ Environment
 - Installation media: Bootable Debian USB installer
 - Display: Dell 21.5-inch monitor
 - Display connection: DisplayPort cable
-- Spekarer: Logitect speakers audio jack
+- Spekarer: Logitech speakers via audio jack
 - Audio input: TONOR TC-30 USB condenser microphone
 - Input devices: Wired USB keyboard and mouse
 - Power: 90-watt HP EliteDesk power adapter and monitor power cable
