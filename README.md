@@ -21,9 +21,6 @@ Prepare Installation Media and Hardware
 - Open the disk partitioning step.
 - Select guided partitioning with encrypted LVM.
 
-No questions. This is ready to paste and build from.
-
-```markdown
 ## LVM Write Confirmation
 
 - Select the internal NVMe drive as the Debian installation target.
@@ -153,4 +150,5 @@ No questions. This is ready to paste and build from.
 - The absence of port `22` in the socket review confirms SSH is no longer exposed.
 
 <img src="images/ssh-disabled-port-review.png" alt="SSH Disabled and Port Review" width="700"/>
-```
+
+
