@@ -1,6 +1,38 @@
-**Debian Secure Built**
+**Debian Secure Build**
 
 Secure Debian 13 Cinnamon workstation deployment with encrypted LVM, UFW firewall, connectivity validation, and SSH exposure remediation.
+
+Project Overview
+
+I ran into a practical workflow problem while building my technical portfolio. My Dell Latitude laptop worked, but the screen space was limited, and I was doing more documentation, screenshot review, browser research, terminal work, and GitHub writing at the same time. The smaller screen slowed down my workflow and made it harder to organize technical documentation efficiently.
+
+This made me realize I needed a larger workstation setup. I wanted an economical build, but I also needed enough power to support Linux administration work, documentation, and future virtual machines. I chose an HP EliteDesk Mini because it gave me a small physical footprint, strong hardware, and enough system resources for a practical Linux workstation.
+
+This project documents my secure deployment of a Debian 13 Cinnamon workstation on an HP EliteDesk Mini. My goal was to build a lean, secure, and powerful Linux workstation with encrypted storage, a basic firewall baseline, verified network connectivity, and reduced unnecessary service exposure.
+
+This documentation is written to reflect a repeatable technical work instruction. I included key screenshots as evidence of important configuration and validation steps.
+
+Objectives
+
+- Deploy Debian 13 on physical workstation hardware.
+- Configure encrypted LVM during installation.
+- Verify the final partition layout before completing installation.
+- Install a desktop workstation environment.
+- Confirm successful first boot, hostname, and user account.
+- Enable a baseline UFW firewall policy.
+- Validate outbound network and package repository access.
+- Disable SSH when remote access is not required.
+- Review listening ports after service changes.
+
+Environment
+
+- Hardware: HP EliteDesk Mini
+- Operating System: Debian 13
+- Desktop Environment: Cinnamon
+- Storage Configuration: Encrypted LVM
+- Firewall: UFW
+- Network: Wireless home network
+- Installation Media: Bootable Debian USB installer
 
 Prepare Installation Media and Hardware
 
@@ -97,12 +129,13 @@ First Boot Hostname and User Verification
 
 UFW Firewall Baseline
 
-- Install UFW.
-- Check UFW status before enabling the firewall.
-- Set the default firewall policy to deny incoming traffic.
-- Set the default firewall policy to allow outgoing traffic.
-- Enable UFW.
-- Run `sudo ufw status verbose`.
+- Install UFW by running `sudo apt install ufw`.
+- Check the firewall status by running `sudo ufw status verbose`.
+- Confirm UFW is installed before applying firewall rules.
+- Set the default incoming policy by running `sudo ufw default deny incoming`.
+- Set the default outgoing policy by running `sudo ufw default allow outgoing`.
+- Enable the firewall by running `sudo ufw enable`.
+- Verify the active firewall configuration by running `sudo ufw status verbose`.
 - Confirm UFW is active.
 - Confirm firewall logging is enabled.
 - Confirm incoming traffic is denied by default.
@@ -114,7 +147,7 @@ UFW Firewall Baseline
 
 <img src="images/ufw-active.png" alt="UFW Firewall Baseline" width="700"/>
 
-## Network Connectivity Confirmation
+Network Connectivity Confirmation
 
 - Run `ping -c 4 deb.debian.org`.
 - Confirm Debian receives responses from `deb.debian.org`.
