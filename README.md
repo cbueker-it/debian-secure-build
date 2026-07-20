@@ -4,9 +4,11 @@ Secure Debian 13 Cinnamon workstation deployment with encrypted LVM, UFW firewal
 
 Project Overview
 
-I ran into a practical workflow problem while building my technical portfolio. My Dell Latitude laptop worked, but the screen space was limited, and I was doing more documentation, screenshot review, browser research, terminal work, and GitHub writing at the same time. The smaller screen slowed down my workflow and made it harder to organize technical documentation efficiently.
+While working from my Dell Latitude running Ubuntu 24, I ran into a practical workflow problem while building my technical portfolio. The laptop worked, but the 13.3-inch screen was limited for the type of work I was doing. My technical work increasingly requires documentation, screenshot review and GitHub writing at the same time.
 
-This made me realize I needed a larger workstation setup. I wanted an economical build, but I also needed enough power to support Linux administration work, documentation, and future virtual machines. I chose an HP EliteDesk Mini because it gave me a small physical footprint, strong hardware, and enough system resources for a practical Linux workstation.
+The smaller screen slowed down my workflow and created unnesseccary friction. It meant more window switching, more button clicks, and more effort to organize technical documentation efficiently. As my work continued moving toward practical systems administration and information security, I realized that I needed a larger workstation setup that would make it easier to document the work clearly.
+
+My intention was to build the workstation economically while still having enough power to support Linux administration work, documentation, and future virtual machines. I chose an HP EliteDesk Mini because it gave me a small physical footprint, 32 GB of RAM, an Intel i7 10th generation processor, and enough speed, efficiency, and processing power for a practical Linux workstation.
 
 This project documents my secure deployment of a Debian 13 Cinnamon workstation on an HP EliteDesk Mini. My goal was to build a lean, secure, and powerful Linux workstation with encrypted storage, a basic firewall baseline, verified network connectivity, and reduced unnecessary service exposure.
 
@@ -26,13 +28,25 @@ Objectives
 
 Environment
 
-- Hardware: HP EliteDesk Mini
-- Operating System: Debian 13
-- Desktop Environment: Cinnamon
-- Storage Configuration: Encrypted LVM
+- Primary system: HP EliteDesk Mini
+- Processor: Intel Core i7 10th generation
+- Memory: 32 GB RAM
+- Storage: 256GB NVMe SSD
+- Operating system: Debian 13
+- Desktop environment: Cinnamon
+- Storage configuration: Encrypted LVM
 - Firewall: UFW
 - Network: Wireless home network
-- Installation Media: Bootable Debian USB installer
+- Installation media: Bootable Debian USB installer
+- Display: Dell 21.5-inch monitor
+- Display connection: DisplayPort cable
+- Spekarer: Logitect speakers audio jack
+- Audio input: TONOR TC-30 USB condenser microphone
+- Input devices: Wired USB keyboard and mouse
+- Power: 90-watt HP EliteDesk power adapter and monitor power cable
+- Workstation mount: Desk-mounted monitor arm
+
+This workstation was built as an economical desktop setup using practical hardware and accessories that supported Linux administration work, technical documentation, and future virtualization labs.
 
 Prepare Installation Media and Hardware
 
