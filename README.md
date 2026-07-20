@@ -46,7 +46,9 @@ Environment
 - Power: 90-watt HP EliteDesk power adapter and monitor power cable
 - Workstation mount: Desk-mounted monitor arm
 
-This workstation was built as an economical desktop setup using practical hardware and accessories that supported Linux administration work, technical documentation, and future virtualization labs.
+My new workstation was built as an economical desktop setup without compromising the power, speed, and reliability needed for practical technical work. I used a small-form-factor HP EliteDesk Mini along with practical accessories acquired through eBay, Amazon, and Walmart to create a larger and more capable Linux workstation environment.
+
+This setup supports Linux administration work, technical documentation, screenshot review, GitHub writing, and future virtualization labs.
 
 Prepare Installation Media and Hardware
 
