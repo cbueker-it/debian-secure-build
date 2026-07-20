@@ -64,7 +64,7 @@ Prepare Installation Media and Hardware
 - Launch the Debian graphical installer.
 - Select language, location, and keyboard settings.
 - Configure wireless networking for the installer.
-- Configure the hostname as CAB-DEB-DES-01.
+- Configure the hostname as `CAB-DEB-DES-01`.
 - Leave the domain name blank because the system is not joined to an organizational domain.
 - Open the disk partitioning step.
 - Select guided partitioning with encrypted LVM.
@@ -133,11 +133,9 @@ First Boot Hostname and User Verification
 - Boot into the installed Debian system.
 - Enter the encryption passphrase during startup.
 - Log into the Debian desktop.
-- Open Terminal.
-- Run `hostname`.
+- Open Terminal and run `hostname`.
 - Confirm the hostname is `CAB-DEB-DES-01`.
-- Run `whoami`.
-- Confirm the active user is `cbueker`.
+- Run `whoami` and confirm the active user is `cbueker`.
 - `CAB-DEB-DES-01` confirms the configured workstation hostname.
 - `cbueker` confirms the active logged-in user account.
 
@@ -199,5 +197,21 @@ SSH Disabled and Port Review
 - The absence of port `22` in the socket review confirms SSH is no longer exposed.
 
 <img src="images/ssh-disabled-port-review.png" alt="SSH Disabled and Port Review" width="700"/>
+
+Project Summary
+
+This project began with an economical HP EliteDesk Mini that I purchased through eBay. I knew the system did not include an operating system, which was part of why I was able to get a good deal on it. On eBay, I added the item to my wishlist and the seller offered to take $20 off the price, and I was grateful for that.
+
+The computer vendor had a strong rating, and my experience buying computer hardware from highly rated eBay vendors has generally worked out well. This gave me confidence that the hardware would be functional, while still requiring me to verify everything through the build process.
+
+I assembled the required components, created the Debian installation media, and installed Debian 13. I configured encrypted LVM, verified the final partition layout, and selected a workstation desktop environment. I then enabled a basic UFW firewall policy, confirmed network connectivity, and disabled SSH after determining that remote access was not needed yet.
+
+The project accomplished what I set out to do. I turned a bare-bones desktop into a secure, practical, and lickety-split Debian workstation. The system is now ready to support technical documentation, Linux administration practice, GitHub portfolio work, and future virtualization labs.
+
+This build puts me in a better position to continue developing my technical portfolio and to keep growing in systems administration and information security.
+
+Navigation
+
+[`Back to GitHub Profile`](https://www.github.com/cbueker-it)
 
 
